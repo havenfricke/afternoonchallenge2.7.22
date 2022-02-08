@@ -1,0 +1,85 @@
+Data types:
+
+primitive (value type)
+
+    number, string, boolean
+
+    let number= 5
+    let string = 'hello'
+    let html = true
+
+non-primitive (reference type)
+
+    object, array, function
+
+    let object = (thing: "it's a thing")
+    let array = [1, 2, 3, 4, 5]
+    function example(){
+      console.log('I'm a function')
+    }
+
+    Operators (number math operators)
+
+        post-operative, pulls number then adds
+          number++
+          number--
+          number + 5 (simply number + 5)
+          number += 5 (number = number + 5. reassigns the value of number to itself)
+
+          comparative operators
+            number == 5 (returns a boolean true or false based on number) 
+            number === 5 (checks for equality numerically and by data type)
+            number > 4
+            number < 6
+            number >= 4
+            number <= 6
+            
+        pre-operative, adds then pulls number
+          ++number
+          --number
+
+        let sum = 2 + number
+
+        console.log('sum', sum)
+
+          string operators
+            let string2 = 'world'
+            string += 'world' (string = string + 'world')
+            string = hello ${string2} (interpolation)
+            let sameString = string == 'hello world'
+
+
+            console.log('same string', sameString)
+            console.log('string', string)
+
+        Booleans
+
+        bool == true (are these equal?)
+        bool != false (are these not equal? Differece in the exclamation mark)
+
+    Extra conditional information
+        console.log(5 == '5') (true)
+        console.log(5 == '5' && 5 == '4'); (true and false but console will log false because the entire statement is untrue)
+        console.log('hello' == 'hello' || 5 < 4); (returns true if one side is true)
+        console.log(5 === '5' && 'h' == 'h' || 5 > 4); (&& = and, || = or) (True)
+        console.log(5 === '5' && ('h' == 'h' || 5 > 4)); (Order of operations returns this false (PEMDAS))
+
+        flipping a boolean
+
+          console.log('pre-flip', bool)
+          if(bool == true){
+            bool = false
+          }else{
+            bool = true
+          }
+          console.log('post flip', bool)
+
+        flipping a bool (Ternary)
+
+          bool = bool ? false : true
+          console.log('post flip', bool)
+
+        flipping the easiest way
+
+        bool = !bool
+        console.log('post flip', bool)
